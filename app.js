@@ -212,7 +212,7 @@ topicModal.addEventListener('click', (e) => {
 videoCards.forEach(card => {
     card.addEventListener('click', () => {
         const videoId = card.getAttribute('data-video-id');
-        youtubePlayer.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        youtubePlayer.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
         videoModal.classList.add('active');
     });
 });
