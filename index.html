@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Laços - Saúde Mental e Apoio Emocional</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area" id="logo-header">
+                <!-- SVG circular simulated logo similar to drawing -->
+                <svg viewBox="0 0 100 100" class="logo-svg">
+                    <circle cx="50" cy="50" r="40" stroke="#134F8C" stroke-width="4" fill="none"
+                        stroke-dasharray="250 20" />
+                    <text x="50" y="55" font-family="'Outfit', sans-serif" font-size="16" font-weight="bold"
+                        fill="#134F8C" text-anchor="middle">Entre Laços</text>
+                </svg>
+            </div>
+            <button class="menu-toggle" id="menu-btn" aria-label="Abrir Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar / Navigation Menu -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="menu-close" id="menu-close-btn" aria-label="Fechar Menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="#inicio" class="nav-link active">Início</a></li>
+            <li><a href="#aprenda" class="nav-link">Aprenda</a></li>
+            <li><a href="#cuide" class="nav-link">Cuide de você</a></li>
+            <li><a href="#converse" class="nav-link">Converse</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <svg viewBox="0 0 100 100" class="logo-svg-large">
+                <circle cx="50" cy="50" r="42" stroke="#134F8C" stroke-width="4" fill="none"
+                    stroke-dasharray="260 10" />
+                <text x="50" y="55" font-family="'Outfit', sans-serif" font-size="14" font-weight="bold" fill="#134F8C"
+                    text-anchor="middle">Entre Laços</text>
+            </svg>
+        </div>
+    </nav>
+
+
+    <main class="content-container">
+
+        <!-- Seção Início (Home) -->
+        <section id="inicio" class="section sec-inicio">
+            <div class="hero-grid">
+                <div class="hero-text-content">
+                    <h1>Você não está sozinho.</h1>
+                    <p class="hero-subtitle">Um espaço seguro para conversar, aprender e cuidar da sua saúde emocional.
+                    </p>
+                    <a href="#converse" class="btn btn-primary" id="btn-hero-talk">preciso conversar</a>
+                </div>
+                <div class="hero-logo-content">
+                    <!-- Elegant animated placeholder logo -->
+                    <div class="interactive-logo-wrapper">
+                        <div class="blob-bg"></div>
+                        <svg viewBox="0 0 200 200" class="hero-logo-svg">
+                            <path d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0" fill="none"
+                                stroke="#134F8C" stroke-width="5" stroke-linecap="round" stroke-dasharray="450 20"
+                                class="animated-circle-1" />
+                            <path d="M 100, 100 m -60, 0 a 60,60 0 1,0 120,0 a 60,60 0 1,0 -120,0" fill="none"
+                                stroke="#134F8C" stroke-width="3" stroke-dasharray="300 30" class="animated-circle-2" />
+                            <text x="100" y="108" font-family="'Outfit', sans-serif" font-size="22" font-weight="bold"
+                                fill="#134F8C" text-anchor="middle">Entre Laços</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Aprenda (Conteúdos) -->
+        <section id="aprenda" class="section sec-aprenda">
+            <div class="section-header">
+                <h2>Entenda melhor suas emoções através de conteúdos confiáveis sobre ansiedade, depressão, estresse,
+                    autoestima, luto e outros temas relacionados à saúde mental</h2>
+            </div>
+
+            <div class="content-cards-grid">
+                <!-- Card 1: Ansiedade -->
+                <div class="content-card" data-topic="ansiedade">
+                    <div class="card-icon-wrapper">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h3>Ansiedade</h3>
+                    <p class="card-preview">Entenda o que é, os sintomas comuns e técnicas eficazes para acalmar a mente
+                        nos momentos difíceis.</p>
+                    <span class="card-more">Ler mais <i data-lucide="arrow-right"></i></span>
+                </div>
+
+                <!-- Card 2: Depressão -->
+                <div class="content-card" data-topic="depressao">
+                    <div class="card-icon-wrapper">
+                        <i data-lucide="cloud-rain"></i>
+                    </div>
+                    <h3>Depressão</h3>
+                    <p class="card-preview">Identifique os sinais, saiba a diferença entre tristeza e depressão, e veja
+                        como buscar ajuda.</p>
+                    <span class="card-more">Ler mais <i data-lucide="arrow-right"></i></span>
+                </div>
+
+                <!-- Card 3: Estresse -->
+                <div class="content-card" data-topic="estresse">
+                    <div class="card-icon-wrapper">
+                        <i data-lucide="activity"></i>
+                    </div>
+                    <h3>Estresse</h3>
+                    <p class="card-preview">Como o estresse afeta o corpo e a mente, e maneiras saudáveis de gerenciá-lo
+                        no seu dia a dia.</p>
+                    <span class="card-more">Ler mais <i data-lucide="arrow-right"></i></span>
+                </div>
+
+                <!-- Card 4: Autoestima -->
+                <div class="content-card" data-topic="autoestima">
+                    <div class="card-icon-wrapper">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3>Autoestima</h3>
+                    <p class="card-preview">Construa uma relação mais gentil consigo mesmo, praticando o autocuidado e a
+                        autocompaixão.</p>
+                    <span class="card-more">Ler mais <i data-lucide="arrow-right"></i></span>
+                </div>
+
+                <!-- Card 5: Luto -->
+                <div class="content-card" data-topic="luto">
+                    <div class="card-icon-wrapper">
+                        <i data-lucide="heart-off"></i>
+                    </div>
+                    <h3>Luto</h3>
+                    <p class="card-preview">Compreenda as fases do luto, acolha suas emoções nesse processo e saiba que
+                        o tempo tem seu próprio ritmo.</p>
+                    <span class="card-more">Ler mais <i data-lucide="arrow-right"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Cuide de Você (Vídeos) -->
+        <section id="cuide" class="section sec-cuide">
+            <div class="section-header">
+                <h2>Aqui você encontrará exercícios de respiração, meditações guiadas, músicas relaxantes e técnicas que
+                    ajudam a reduzir o estresse.</h2>
+            </div>
+
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video-card" data-video-id="y-gVzN82vQ0">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/y-gVzN82vQ0/hqdefault.jpg" alt="Meditação Guiada">
+                        <div class="play-overlay">
+                            <i data-lucide="play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Meditação Guiada para Ansiedade</h4>
+                        <p>10 minutos de prática simples para acalmar a mente.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card" data-video-id="4_R2e86H4b8">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/4_R2e86H4b8/hqdefault.jpg" alt="Exercício de Respiração">
+                        <div class="play-overlay">
+                            <i data-lucide="play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Respiração Quadrada (4-4-4-4)</h4>
+                        <p>Técnica militar rápida para controle do estresse agudo.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card" data-video-id="lFcSrYw-ARY">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/lFcSrYw-ARY/hqdefault.jpg" alt="Música Relaxante">
+                        <div class="play-overlay">
+                            <i data-lucide="play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Sons da Natureza e Chuva Leve</h4>
+                        <p>Música ambiente suave para dormir, estudar ou meditar.</p>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card" data-video-id="u9Q8S7a8y4s">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/u9Q8S7a8y4s/hqdefault.jpg" alt="Yoga leve">
+                        <div class="play-overlay">
+                            <i data-lucide="play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Alongamento Suave de 15 Minutos</h4>
+                        <p>Exercícios leves para liberar a tensão física acumulada.</p>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="video-card" data-video-id="Tz_UfF2zG20">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/Tz_UfF2zG20/hqdefault.jpg" alt="Mindfulness">
+                        <div class="play-overlay">
+                            <i data-lucide="play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Introdução ao Mindfulness</h4>
+                        <p>Como se manter presente no momento atual com compaixão.</p>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="video-card" data-video-id="814545585">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/8T_NnB0CWhM/hqdefault.jpg"
+                            alt="Ruído Branco / Relaxamento">
+                        <div class="play-overlay">
+                            <i data-lucide="play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h4>Música Relaxante de Frequências Solfeggio</h4>
+                        <p>Som terapêutico profundo para relaxar corpo e mente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Converse -->
+        <section id="converse" class="section sec-converse">
+            <div class="converse-main-view" id="converse-main">
+                <h2>Você não precisa enfrentar tudo sozinho</h2>
+                <p class="converse-subtitle">Aqui você pode conversar anonimamente com outras pessoas ou com nossa
+                    equipe de apoio em um ambiente baseado no respeito, empatia e escuta ativa.</p>
+                <button class="btn-handdrawn" id="btn-start-chat">
+                    <span>quero conversar</span>
+                </button>
+            </div>
+
+            <!-- Chat Interface Container -->
+            <div class="chat-container hidden" id="chat-container">
+                <div class="chat-header">
+                    <div class="chat-user-info">
+                        <div class="chat-avatar">EL</div>
+                        <div>
+                            <h4>Apoio Entre Laços</h4>
+                            <span class="status-indicator">Online (Anônimo)</span>
+                        </div>
+                    </div>
+                    <button class="btn-close-chat" id="btn-close-chat" aria-label="Sair do Chat">
+                        <i data-lucide="log-out"></i>
+                    </button>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                </div>
+                <form class="chat-input-area" id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Escreva sua mensagem com segurança..."
+                        autocomplete="off">
+                    <button type="submit" class="btn-send-message">
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section sec-sobre">
+            <div class="about-grid">
+                <div class="about-logo-content">
+                    <div class="interactive-logo-wrapper-large">
+                        <div class="blob-bg-large"></div>
+                        <svg viewBox="0 0 200 200" class="about-logo-svg">
+                            <path d="M 100, 100 m -80, 0 a 80,80 0 1,0 160,0 a 80,80 0 1,0 -160,0" fill="none"
+                                stroke="#134F8C" stroke-width="4.5" stroke-dasharray="480 30"
+                                class="animated-circle-1" />
+                            <path d="M 100, 100 m -65, 0 a 65,65 0 1,0 130,0 a 65,65 0 1,0 -130,0" fill="none"
+                                stroke="#134F8C" stroke-width="2.5" stroke-dasharray="320 20"
+                                class="animated-circle-2" />
+                            <text x="100" y="108" font-family="'Outfit', sans-serif" font-size="20" font-weight="bold"
+                                fill="#134F8C" text-anchor="middle">Entre Laços</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-text-content">
+                    <p>O EntreLaços é um projeto acadêmico desenvolvido por estudantes do primeiro período do curso de
+                        Design da Universidade Federal da Paraíba (UFPB). A proposta surgiu como parte de uma atividade
+                        voltada ao desenvolvimento de soluções criativas para demandas sociais, utilizando o design como
+                        ferramenta de transformação e inclusão.</p>
+                    <p>Nosso objetivo é oferecer um espaço acolhedor, acessível e gratuito, onde as pessoas possam
+                        encontrar informações sobre saúde mental, recursos de autocuidado e um ambiente seguro para
+                        conversar de forma anônima. O projeto busca incentivar o cuidado com o bem-estar emocional e
+                        promover conexões baseadas no respeito, na empatia e na solidariedade.</p>
+                    <p class="about-alert">O EntreLaços não substitui o acompanhamento de psicólogos, psiquiatras ou
+                        outros profissionais da saúde. A plataforma foi criada para oferecer apoio inicial, acolhimento
+                        e informação, sempre incentivando a busca por ajuda profissional quando necessário.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Entre Laços. Criado com carinho para cuidar de você.</p>
+    </footer>
+
+    <!-- Topic Modal (for Aprenda cards) -->
+    <div class="modal-backdrop" id="topic-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn" aria-label="Fechar Janela">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-body" id="modal-body-content">
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal Player -->
+    <div class="modal-backdrop" id="video-modal">
+        <div class="video-modal-content">
+            <button class="modal-close" id="video-modal-close-btn" aria-label="Fechar Vídeo">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="video-player-wrapper">
+                <iframe id="youtube-player" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
